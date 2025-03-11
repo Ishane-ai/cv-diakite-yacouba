@@ -6,16 +6,16 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(135deg, #e0e0e0, #4a4a4a); /* Gris clair à gris foncé */
-    color: #333;
+    background: #FFFFFF; /* Blanc pur */
+    color: #1A1A1A; /* Noir profond */
     line-height: 1.6;
 }
 
 header {
-    background: #2e2e2e; /* Gris très foncé */
+    background: #1A1A1A; /* Noir pour le header */
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 #cover-photo {
@@ -24,20 +24,20 @@ header {
     background-position: center;
     border-radius: 10px 10px 0 0;
     margin-bottom: 1rem;
-    box-shadow: 0 0 15px #888;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .header-content h1 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #fff;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    color: #FFFFFF;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .header-content p {
     font-size: 1.2rem;
     font-weight: 300;
-    color: #ccc;
+    color: #F5E8C7; /* Beige doux */
 }
 
 nav ul {
@@ -51,14 +51,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #bbb;
+    color: #F5E8C7;
     transform: scale(1.1);
 }
 
@@ -66,15 +66,15 @@ section {
     max-width: 1100px;
     margin: 40px auto;
     padding: 25px;
-    background: #fff;
+    background: #FFFFFF;
     border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     opacity: 0;
     transform: translateY(30px);
 }
 
 h2 {
-    color: #4a4a4a; /* Gris foncé */
+    color: #1A1A1A;
     font-size: 2rem;
     margin-bottom: 20px;
     position: relative;
@@ -84,7 +84,7 @@ h2::after {
     content: '';
     width: 60px;
     height: 4px;
-    background: #888; /* Gris moyen */
+    background: #F5E8C7; /* Beige subtil */
     position: absolute;
     bottom: -8px;
     left: 0;
@@ -93,19 +93,19 @@ h2::after {
 .experience, .projet {
     margin: 20px 0;
     padding: 20px;
-    background: #f5f5f5; /* Gris très clair */
+    background: #F9F9F9; /* Très léger gris-blanc */
     border-radius: 8px;
     transition: all 0.3s ease;
 }
 
 .experience:hover, .projet:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    background: #e0e0e0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: #F5E8C7; /* Beige au survol */
 }
 
 .experience h3, .projet h3 {
-    color: #2e2e2e;
+    color: #1A1A1A;
     font-size: 1.3rem;
 }
 
@@ -124,17 +124,17 @@ h2::after {
 
 ul {
     margin-left: 25px;
-    color: #444;
+    color: #1A1A1A;
 }
 
 a {
-    color: #4a4a4a;
+    color: #1A1A1A;
     text-decoration: none;
     font-weight: 500;
 }
 
 a:hover {
-    color: #888;
+    color: #F5E8C7;
 }
 
 .fade-in {
@@ -157,62 +157,88 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #fff;
-    padding: 25px;
+    background: #FFFFFF;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 700px;
+    max-height: 80vh;
+    overflow-y: auto;
     z-index: 1000;
 }
 
 #admin-panel h2 {
-    color: #2e2e2e;
+    color: #1A1A1A;
+    margin-bottom: 15px;
 }
 
 #stats {
-    margin: 20px 0;
-    padding: 15px;
-    background: #f5f5f5;
+    margin: 15px 0;
+    padding: 10px;
+    background: #F9F9F9;
     border-radius: 8px;
+}
+
+.form-container {
+    max-height: 60vh;
+    overflow-y: auto;
+    padding-right: 10px;
 }
 
 #admin-panel form label {
     display: block;
     margin: 15px 0;
-    color: #333;
+    color: #1A1A1A;
 }
 
 #admin-panel input, #admin-panel textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 2px solid #888;
+    border: 1px solid #1A1A1A;
     border-radius: 8px;
+    box-sizing: border-box;
 }
 
 #admin-panel textarea {
-    height: 150px;
+    height: 120px;
     resize: vertical;
 }
 
-#admin-panel button {
-    padding: 12px 25px;
-    background: #4a4a4a;
-    color: #fff;
+#validate-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #1A1A1A;
+    color: #FFFFFF;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 20px;
+    font-size: 1.1rem;
     transition: background 0.3s ease;
 }
 
-#admin-panel button:hover {
-    background: #666;
+#validate-btn:hover {
+    background: #F5E8C7;
+    color: #1A1A1A;
 }
 
 #close-admin {
     float: right;
+    padding: 5px 10px;
+    background: #1A1A1A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#close-admin:hover {
+    background: #F5E8C7;
+    color: #1A1A1A;
 }
 
 @media (max-width: 600px) {
