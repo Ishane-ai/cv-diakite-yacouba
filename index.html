@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV de DIAKITE Yacouba">
+    <title>DIAKITE Yacouba - [Ton Titre]</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div id="cover-photo" style="background-image: url('https://via.placeholder.com/1200x400')"></div>
+            <h1 id="nom">DIAKITE Yacouba</h1>
+            <p id="titre">[Ton Titre]</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#experiences">Expériences</a></li>
+                <li><a href="#realisations">Réalisations</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- Bouton Admin caché -->
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil" class="fade-in">
+        <h2>Bienvenue</h2>
+        <p id="intro">Je suis DIAKITE Yacouba, [ton titre]. Explorez mon parcours.</p>
+    </section>
+
+    <section id="apropos" class="fade-in">
+        <h2>À propos</h2>
+        <p id="about-text">[Décris-toi ici via l’admin.]</p>
+    </section>
+
+    <section id="experiences" class="fade-in">
+        <h2>Expériences Professionnelles</h2>
+        <div id="exp-list"></div>
+    </section>
+
+    <section id="realisations" class="fade-in">
+        <h2>Réalisations</h2>
+        <div id="proj-list"></div>
+    </section>
+
+    <section id="cv" class="fade-in">
+        <h2>Mon CV</h2>
+        <div id="cv-content">[Ton CV s’affichera ici.]</div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <h2>Contact</h2>
+        <p>Email : <a href="mailto:ton.email@example.com" id="email-link">ton.email@example.com</a></p>
+        <p>LinkedIn : <a href="https://linkedin.com/in/tonprofil" id="linkedin-link">linkedin.com/in/tonprofil</a></p>
+    </section>
+
+    <div id="admin-panel" class="admin-hidden">
+        <h2>Tableau de Bord Admin</h2>
+        <button id="close-admin">Fermer</button>
+        <div id="stats">
+            <p>Nombre de visites : <span id="visit-count">0</span></p>
+            <p>Temps moyen sur le site : <span id="avg-time">0s</span></p>
+        </div>
+        <form id="admin-form">
+            <label>Identifiant Admin : <input type="text" id="admin-id" value="yacouba"></label>
+            <label>Mot de passe Admin : <input type="text" id="admin-pass" value="diakite"></label>
+            <label>Nom : <input type="text" id="admin-nom" value="DIAKITE Yacouba"></label>
+            <label>Titre : <input type="text" id="admin-titre" value="[Ton Titre]"></label>
+            <label>Photo de couverture (URL) : <input type="text" id="admin-photo" value="https://via.placeholder.com/1200x400"></label>
+            <label>Intro : <textarea id="admin-intro">Je suis DIAKITE Yacouba, [ton titre]. Explorez mon parcours.</textarea></label>
+            <label>À propos : <textarea id="admin-about">[Décris-toi ici via l’admin.]</textarea></label>
+            <label>Email : <input type="email" id="admin-email" value="ton.email@example.com"></label>
+            <label>LinkedIn : <input type="text" id="admin-linkedin" value="https://linkedin.com/in/tonprofil"></label>
+            <label>CV (lien ou texte) : <textarea id="admin-cv">[Ton CV s’affichera ici.]</textarea></label>
+            <label>Expériences (une par ligne, format : Poste - Entreprise | Dates | Missions | Vidéo URL) : 
+                <textarea id="admin-exp">Développeur - TechNova | Juin 2022 - Présent | Codage, Optimisation | https://www.youtube.com/embed/dQw4w9WgXcQ</textarea>
+            </label>
+            <label>Réalisations (une par ligne, format : Titre | Description) : 
+                <textarea id="admin-proj">Portfolio | Site vitrine audacieux</textarea>
+            </label>
+            <button type="submit">Mettre à jour</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
