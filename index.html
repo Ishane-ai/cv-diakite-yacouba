@@ -23,7 +23,6 @@
                 <li><a href="#realisations">Réalisations</a></li>
                 <li><a href="#cv">CV</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <!-- Bouton Admin caché -->
             </ul>
         </nav>
     </header>
@@ -67,23 +66,25 @@
             <p>Temps moyen sur le site : <span id="avg-time">0s</span></p>
         </div>
         <form id="admin-form">
-            <label>Identifiant Admin : <input type="text" id="admin-id" value="yacouba"></label>
-            <label>Mot de passe Admin : <input type="text" id="admin-pass" value="diakite"></label>
-            <label>Nom : <input type="text" id="admin-nom" value="DIAKITE Yacouba"></label>
-            <label>Titre : <input type="text" id="admin-titre" value="[Ton Titre]"></label>
-            <label>Photo de couverture (URL) : <input type="text" id="admin-photo" value="https://via.placeholder.com/1200x400"></label>
-            <label>Intro : <textarea id="admin-intro">Je suis DIAKITE Yacouba, [ton titre]. Explorez mon parcours.</textarea></label>
-            <label>À propos : <textarea id="admin-about">[Décris-toi ici via l’admin.]</textarea></label>
-            <label>Email : <input type="email" id="admin-email" value="ton.email@example.com"></label>
-            <label>LinkedIn : <input type="text" id="admin-linkedin" value="https://linkedin.com/in/tonprofil"></label>
-            <label>CV (lien ou texte) : <textarea id="admin-cv">[Ton CV s’affichera ici.]</textarea></label>
-            <label>Expériences (une par ligne, format : Poste - Entreprise | Dates | Missions | Vidéo URL) : 
-                <textarea id="admin-exp">Développeur - TechNova | Juin 2022 - Présent | Codage, Optimisation | https://www.youtube.com/embed/dQw4w9WgXcQ</textarea>
-            </label>
-            <label>Réalisations (une par ligne, format : Titre | Description) : 
-                <textarea id="admin-proj">Portfolio | Site vitrine audacieux</textarea>
-            </label>
-            <button type="submit">Mettre à jour</button>
+            <div class="form-container">
+                <label>Identifiant Admin : <input type="text" id="admin-id" value="yacouba"></label>
+                <label>Mot de passe Admin : <input type="text" id="admin-pass" value="diakite"></label>
+                <label>Nom : <input type="text" id="admin-nom" value="DIAKITE Yacouba"></label>
+                <label>Titre : <input type="text" id="admin-titre" value="[Ton Titre]"></label>
+                <label>Photo de couverture (URL) : <input type="text" id="admin-photo" value="https://via.placeholder.com/1200x400"></label>
+                <label>Intro : <textarea id="admin-intro">Je suis DIAKITE Yacouba, [ton titre]. Explorez mon parcours.</textarea></label>
+                <label>À propos : <textarea id="admin-about">[Décris-toi ici via l’admin.]</textarea></label>
+                <label>Email : <input type="email" id="admin-email" value="ton.email@example.com"></label>
+                <label>LinkedIn : <input type="text" id="admin-linkedin" value="https://linkedin.com/in/tonprofil"></label>
+                <label>CV (lien ou texte) : <textarea id="admin-cv">[Ton CV s’affichera ici.]</textarea></label>
+                <label>Expériences (une par ligne, format : Poste - Entreprise | Dates | Missions | Vidéo URL) : 
+                    <textarea id="admin-exp">Développeur - TechNova | Juin 2022 - Présent | Codage, Optimisation | https://www.youtube.com/embed/dQw4w9WgXcQ</textarea>
+                </label>
+                <label>Réalisations (une par ligne, format : Titre | Description) : 
+                    <textarea id="admin-proj">Portfolio | Site vitrine audacieux</textarea>
+                </label>
+            </div>
+            <button type="submit" id="validate-btn">Valider les changements</button>
         </form>
     </div>
 
